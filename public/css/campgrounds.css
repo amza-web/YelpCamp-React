@@ -1,0 +1,109 @@
+/* Main Styling */
+main section:nth-child(1){
+    background-color: #f9f6f1;
+    padding: 4.5rem 4rem;
+    margin-bottom: 4.5rem;
+}
+main .content1{
+    max-width: 25rem;
+    
+}
+
+.inp-grp{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    margin: 1rem 0rem;
+}
+.content1 form{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+.content1 h1{
+    margin-bottom: 0.5rem;
+}
+form .btn{
+    font-size: 1em;
+}
+.bl-a{
+    color: #6b728f;
+}
+.search-inp{
+    font-size: 1em;
+    background: none;
+    border: none;
+}   
+
+
+/* Campgrounds */
+.camps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.camp-item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    border: 1px solid #9E9E9E;
+    border-radius: 7px;
+    padding: 16px;
+}
+.camp-item img{
+    width: 100%;
+    border-radius: 7px;
+}
+.camp-item div{
+    border-radius: 40px;
+}
+.content1 .search-inp {
+    width: 100%;
+}
+.content1 .search-inp:focus-visible{
+    border: none;
+    outline: none;
+}
+
+
+
+
+/* Media Styling */
+@media screen and (max-width:1024px) {
+    .camps{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 680px){
+    header{
+        padding: 2.5rem 0rem;
+    }
+    .camps{
+        display: flex;
+        flex-direction: column;
+    }
+    main section:nth-child(1) {
+        padding: 2rem;
+    }
+    form{
+        flex-direction: column;
+    }
+    form .btn.primary{
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 18px;
+    }
+   
+    
+    .content1 form{
+        display: block;
+    }
+}

@@ -1,0 +1,39 @@
+.inp-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+h1{
+    margin-bottom: 1rem;
+}
+input, textarea{
+    background-color: #f7f7f7;
+    padding: 1em;
+}
+textarea{
+    min-height: 220px;
+}
+input::placeholder, textarea::placeholder{
+    color: #b4b4b4;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 550px;
+    margin: 0px auto;
+}
+.btn.primary{
+    width: 100%;
+    margin: 0px;
+}
+
+form{
+    margin-top: 2rem;                
+}
+
+@media screen and (max-width: 1024px) {
+    .form{
+        margin: 0px 0px;
+    }
+}
