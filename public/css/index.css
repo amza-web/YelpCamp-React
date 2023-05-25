@@ -9,7 +9,7 @@ html{
     color: #6b7280;
     background-color: #f9f6f1;
 }
-body{
+.App{
     height: 100vh;
     overflow: hidden;
     font-family: 'Archivo', sans-serif;
