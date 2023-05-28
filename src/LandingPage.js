@@ -7,7 +7,11 @@ import Airbnb from './img/Airbnb.svg'
 import HeroImg from './img/Hero-Image.jpg'
 import HeroImgTablet from './img/Hero Image (Tablet and Mobile).jpg'
 import Checkmark from './img/Checkmark.svg'
+import { useEffect } from "react";
 function LandingPage(){
+    useEffect(() => {
+        document.title = 'YelpCamp';
+      }, []);
     const Page = styled.div`
     height: 100vh;
     overflow: hidden;

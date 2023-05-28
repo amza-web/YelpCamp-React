@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Logo from "../img/Logo.svg";
+import { Link } from "react-router-dom";
 function Header(){
     const navRef = useRef(null);
     const toggleNav = ()=>{navRef.current.classList.toggle("show")}
@@ -9,14 +10,14 @@ function Header(){
                 <nav className="nav">
                     <ul>
                         <div className="grp">
-                            <li className="logo-ctn"><a className="nav-link" href="index.html"><img src={Logo} alt="Logo"/></a></li>
-                            <li className="mob-no"><a className="nav-link" href="campgrounds.html">Home</a></li>
+                            <li className="logo-ctn"><Link className="nav-link" to="/"><img src={Logo} alt="Logo"/></Link></li>
+                            <li className="mob-no"><Link className="nav-link" to="/campgrounds">Home</Link></li>
                         </div>
                         <div className="grp">
-                            <li className="mob-no"><a href="login.html" className="nav-link">Login</a></li>
+                            <li className="mob-no"><Link to="/login" className="nav-link">Login</Link></li>
                             {/* <!-- Loggged in
                             <li className="mob-no"><b>John Doe</b></li> --> */}
-                            <li className="mob-no"><a href="signup.html" className="nav-link btn primary">Create an account</a></li>
+                            <li className="mob-no"><Link to="/signup" className="nav-link btn primary">Create an account</Link></li>
                             {/* <!-- Loggged in
                             <li className="mob-no"><a href="campgrounds.html" className="nav-link">Logout</a></li> --> */}
                             <li className="mob-only">
@@ -36,7 +37,7 @@ function Header(){
                     </button>
                 </div>
                 <ul>
-                    <li><a href="campgrounds.html">Home</a></li>
+                    <li><Link to="/campgrounds">Home</Link></li>
                     <hr/>
                     <li><a href="login.html">Login</a></li>
                     {/* <!-- Loggged in
